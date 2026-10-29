@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © DMLab. All rights reserved.
+ * Licensed under the Open Software License version 3.0 (OSL-3.0). See LICENSE.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="dmlab" translate="label" sortOrder="400">
+            <label>DMLab</label>
+        </tab>
+        <section id="dmlab_disable_log" translate="label" type="text" sortOrder="90" showInDefault="1">
+            <class>separator-top</class>
+            <label>Disable Log</label>
+            <tab>dmlab</tab>
+            <resource>DmLab_DisableLog::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1">
+                <label>General</label>
+                <field id="disable_customer_log" translate="label comment" type="select" sortOrder="10"
+                       showInDefault="1">
+                    <label>Disable Customer Login/Logout Log</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Stops writes to customer_log (last login/logout times).</comment>
+                </field>
+                <field id="disable_visitor_log" translate="label comment" type="select" sortOrder="20"
+                       showInDefault="1">
+                    <label>Disable Online Visitor Tracking</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Stops writes to customer_visitor. "Customers > Now Online" stays empty
+                        and guest product compare stops working.]]></comment>
+                </field>
+                <field id="disable_search_log" translate="label comment" type="select" sortOrder="30"
+                       showInDefault="1">
+                    <label>Disable Search Query Log</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Stops search_query writes: new terms, popularity and result counts.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

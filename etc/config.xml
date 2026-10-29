@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © DMLab. All rights reserved.
+ * Licensed under the Open Software License version 3.0 (OSL-3.0). See LICENSE.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <dmlab_disable_log>
+            <general>
+                <disable_customer_log>0</disable_customer_log>
+                <disable_visitor_log>0</disable_visitor_log>
+                <disable_search_log>0</disable_search_log>
+            </general>
+        </dmlab_disable_log>
+    </default>
+</config>

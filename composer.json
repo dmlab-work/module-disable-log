@@ -1,0 +1,38 @@
+{
+    "name": "dmlab/module-disable-log",
+    "description": "Per-source admin toggles to disable Magento's high-frequency core logging: customer login/logout log, online-visitor tracking and search-query stats. Default off — installing changes nothing.",
+    "keywords": [
+        "magento2",
+        "magento2-module",
+        "magento 2",
+        "logging",
+        "customer log",
+        "visitor log",
+        "online customers",
+        "search terms",
+        "performance",
+        "database"
+    ],
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "version": "0.0.1",
+    "require": {
+        "php": "~8.3.0||~8.4.0||~8.5.0",
+        "magento/framework": "^103.0.9",
+        "magento/module-config": "^101.2.9",
+        "magento/module-customer": "^103.0.9",
+        "magento/module-reports": "^100.4.9",
+        "magento/module-search": "^101.1.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "DmLab\\DisableLog\\": ""
+        }
+    }
+}
