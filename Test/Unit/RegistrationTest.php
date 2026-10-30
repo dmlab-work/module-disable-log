@@ -49,7 +49,7 @@ class RegistrationTest extends TestCase
         self::assertSame('dmlab/module-disable-log', $composer['name']);
         self::assertSame('magento2-module', $composer['type']);
         self::assertSame('OSL-3.0', $composer['license']);
-        self::assertSame('0.0.1', $composer['version']);
+        self::assertSame('0.0.2', $composer['version']);
         self::assertSame(
             ['magento/framework', 'magento/module-config', 'magento/module-customer',
                 'magento/module-reports', 'magento/module-search', 'php'],
